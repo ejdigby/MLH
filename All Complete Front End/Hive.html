@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>HomeHub - Hive Heating</title>
+	</head>
+	<body>
+		<header>
+			<div id="HomeHub">
+				<h1><a href="dashboard.html">HomeHub</a></h1>
+			</div>
+			<div id="PageTitle">
+				<h1>Heating</h1>
+			</div>
+			<div id="logout">
+			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
+			<a class="logout"href="../logout.php"><span >[Username]</span></a>
+		</div>
+
+		</header>
+
+		<div id="Wrap">
+			<div id="Content">
+				<h1>Current temperature:</h1>
+				<p>[]</p>
+				<br>
+				<h1>Heating:</h1>
+				<div id="answer">
+					On <input type="radio" name="yes/no" value="yes" class="Radio">
+				</div>
+				<div id="answer">Off <input type="radio" name="yes/no"value="no" class="Radio"></div>
+				<br>
+				<br>
+				<h1>Adjust temperature:</h1>
+					<input type="button" name="-1" class="button" value="-"><p class="button">[]</p><input type="button" name="+1" class="button" value="+">
+			</div>
+		</div>
+	</body>
+</html>
