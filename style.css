@@ -11,17 +11,38 @@ header {
 	height: 60px;
 	background-color: #000;
 }
-header h1{
+header h1 {
 	display: inline;
 	color: #fff;
 	line-height: 60px;
 }
-#PageTitle {
+#HomeHub {
 	float: left;
-	padding-left: 40px;
+	width: 40%;
+	margin-left: 40px;
+	display: inline;
+	text-align: left;
+}
+#PageTitle {
+	width: 40%;
+	float:none;
+	text-align: center;
+	display: inline;
 }
 #Logout {
-
+	float: right;
+	text-align: right;
+	display: inline;
+	width: 20%;
+	margin-right: 40px;
+}
+a {
+	color:#fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	opacity: 0.4;
 }
 #Wrap {
 	width: 1250px;
