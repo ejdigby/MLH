@@ -93,7 +93,6 @@ a:hover {
 	font-size: 22px;
 	text-decoration: underline;
 }
-
 .logout:hover span {
 	display:none;
 }
@@ -101,3 +100,14 @@ a:hover {
 	content:"logout";
 		
 } 
+#answer {
+	margin-left: 10px;
+	display: inline;
+}
+.button {
+	width: 25px;
+	height: 25px;
+	display: inline;
+	margin-left: 20px;
+	margin-top: 5px;
+}
