@@ -7,27 +7,31 @@
 	<body>
 		<header>
 			<div id="HomeHub">
-				<h1>HomeHub</h1>
+				<h1><a href="dashboard.html">HomeHub</a></h1>
 			</div>
 			<div id="PageTitle">
 				<h1>Dashboard</h1>
 			</div>
-			<div id="Logout">
-				<h1><a href="">Logout</a></h1>
-			</div>
+			<div id="logout">
+			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
+			<a class="logout"href="../logout.php"><span >[Username]</span></a>
+		</div>
+
 		</header>
 
 		<div id="Wrap">
 			<div id="Content">
-				<div id="Row1">
+				<div id="Row">
 					<div id="Box">
 					<img src="Hive.png" />
 					<p>Heating</p>
 					</div>
 					<div id="Box">
-					<p>Lights</p>
+					<img src="Bulb.png" />
+					<p>Lighting</p>
 					</div>
 					<div id="Box">
+					<img src="Alarm.png" />
 					<p>Alarms</p>
 					</div>
 				</div>
