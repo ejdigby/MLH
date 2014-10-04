@@ -1,16 +1,16 @@
 <?php
 
-echo ''' <header>
-			<div id="HomeHub">
-				<h1>HomeHub</h1>
-			</div>
-			<div id="PageTitle">
-				<h1>Dashboard</h1>
-			</div>
-			<div id="Logout">
-				<h1><a href="">Logout</a></h1>
-			</div>
-		</header>
-		''';
-
+echo '<header>';
+echo '<div id="HomeHub">';
+echo '<h1>HomeHubecho </h1>';
+echo '</div>';
+echo '<div id="PageTitle">';
+echo '<h1>Dashboardecho </h1>';
+echo '</div>';
+echo '<div id="Logout">';
+echo '<h1>';
+echo '<a href="">Logoutecho </a>echo </h1>';
+echo '</div>';
+echo '</header>';
+		
 ?>
