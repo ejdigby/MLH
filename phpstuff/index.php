@@ -6,7 +6,7 @@
 	</head>
 	<body>
 	<?php 
-		include 'header.php';
+		include 'assets/header.php';
 		?>	
 
 		<div id="Wrap">
