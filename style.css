@@ -62,11 +62,24 @@ a:hover {
 	margin-right: auto;
 	margin-left: -30px;
 }
-#Box img{
+#Box {
+	color: #fff;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin-left: 50px;
+	background-color: #666666;
+	border-radius: 50px;
+}
+#Box img {
 	width: 128px;
 	margin-left: auto;
 	margin-right:auto;
 	text-align: center;
 	padding-left: 85px;
 	padding-top: 75px;
+}
+#Box p {
+	font-size: 40px;
+	text-align: center;
 }
