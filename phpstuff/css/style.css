@@ -1,0 +1,103 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body, html {
+	height: 100%;
+	width: 100%;
+	font-family: "Helvetica";
+}
+header {
+	height: 60px;
+	background-color: #000;
+}
+header h1 {
+	display: inline;
+	color: #fff;
+	line-height: 60px;
+}
+#HomeHub {
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+	display: inline;
+	text-align: left;
+}
+#PageTitle {
+	width: 40%;
+	float:none;
+	text-align: center;
+	display: inline;
+}
+#Logout {
+	float: right;
+	text-align: right;
+	display: inline;
+	width: 20%;
+	margin-right: 40px;
+}
+a {
+	color:#fff;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	opacity: 0.4;
+}
+#Wrap {
+	width: 1250px;
+	background-color: #eee;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Content {
+	padding: 100px;
+}
+#Row {
+	display: inline-block;
+	height: 300px;
+	width:1200px;
+	margin-top: -50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: -30px;
+}
+#Box {
+	color: #fff;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+	margin-left: 50px;
+	background-color: #666666;
+	border-radius: 50px;
+}
+#Box img {
+	width: 200px;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+#Box p {
+	font-size: 30px;
+	text-align: center;
+}
+#logout {
+	float: right;
+	padding-right: 40px;
+	display: inline;
+	color: #ffffff;
+	font-family: 'Helvetica';
+	line-height: 65px;
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+.logout:hover span {
+	display:none;
+}
+.logout:hover:before {
+	content:"logout";
+		
+} 
