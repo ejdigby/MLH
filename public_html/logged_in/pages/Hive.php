@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>HomeHub - Hive Heating</title>
-	</head>
+<html> 
+	<?php session_start();
+       $_SESSION['username']= $_COOKIE["username"];
+        $_SESSION['Userid']= $_COOKIE["uid"];	
+
+
+		$pagename = "Heating";
+		$dirnm = 3;
+
+		include '../../assets/head.php';
+		 ?>
 	<body>
-		<header>
-			<div id="HomeHub">
-				<h1><a href="dashboard.html">HomeHub</a></h1>
-			</div>
-			<div id="PageTitle">
-				<h1>Heating</h1>
-			</div>
-			<div id="logout">
-			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
-			<a class="logout"href="../logout.php"><span >[Username]</span></a>
-		</div>
-
-		</header>
-
+		<?php 
+		include '../../assets/header.php';
+		?>
 		<div id="Wrap">
 			<div id="Content">
 				<h1>Current temperature:</h1>

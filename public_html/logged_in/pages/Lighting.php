@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<title>HomeHub - Lighting</title>
-	</head>
+<html> 
+	<?php session_start();
+       $_SESSION['username']= $_COOKIE["username"];
+        $_SESSION['Userid']= $_COOKIE["uid"];	
+
+
+		$pagename = "Lighting";
+		$dirnm = 3;
+
+		include '../../assets/head.php';
+		 ?>
 	<body>
-		<header>
-			<div id="HomeHub">
-				<h1><a href="dashboard.html">HomeHub</a></h1>
-			</div>
-			<div id="PageTitle">
-				<h1>Lighting</h1>
-			</div>
-			<div id="logout">
-			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
-			<a class="logout"href="../logout.php"><span >[Username]</span></a>
-		</div>
-
-		</header>
-
+		<?php 
+		include '../../assets/header.php';
+		?>
+		
 		<div id="Wrap">
 			<div id="Content">
 				<h1>Current lights on:</h1>
@@ -36,6 +32,7 @@
 				On <input type="radio" name="IndLights"value="On" class="Radio">
 				Off <input type="radio" name="IndLights"value="Off" class="Radio">
 			</div>
+		
 		</div>
 	</body>
 </html>

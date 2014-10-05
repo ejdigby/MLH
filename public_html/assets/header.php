@@ -1,16 +1,16 @@
-<?php
+<?php 
+include 'sessiondata.php';
+ ?>
 
-echo '<header>';
-echo '<div id="HomeHub">';
-echo '<h1>HomeHub </h1>';
-echo '</div>';
-echo '<div id="PageTitle">';
-echo '<h1>Dashboard </h1>';
-echo '</div>';
-echo '<div id="Logout">';
-echo '<h1>';
-echo '<a class="logout"href="../logout.php"><span >[Username]</span></a>';
-echo '</div>';
-echo '</header>';
-		
-?>
+<header>
+<div id="HomeHub">
+<h1><a href="/"> HomeHub </a></h1>
+</div>
+<div id="PageTitle">
+<h1>Dashboard </h1>
+</div>
+<div id="Logout">
+<h1>
+<a class="logout"href="/assets/logout.php"><span ><?php echo $_SESSION['username'];?></span></a>
+</h1></div>
+</header>

@@ -1,6 +1,6 @@
 <?php
 
- function ()
+ function (){
 
     $alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
     $code = array(); //remember to declare $pass as an array
@@ -11,22 +11,16 @@
     }
     echo (implode($code)); //turn the array into a string
     $code = implode($code);
-
+}
 
 // Get the PHP helper library from twilio.com/docs/php/install
-require_once('/path/to/twilio-php/Services/Twilio.php'); // Loads the library
+require_once('/etc/twilio-php/Services/Twilio.php'); // Loads the library
  
 // Your Account Sid and Auth Token from twilio.com/user/account
-$sid = "AC5ef8732a3c49700934481addd5ce1659"; 
-$token = "{{ auth_token }}"; 
+$sid = "ACfa37d4feb4c97c558622e49f26256492"; 
+$token = "072723e05dab8244abe0c001123d3128"; 
 $client = new Services_Twilio($sid, $token);
  
-$client->account->messages->sendMessage("+14158141829", "+15558675309", "abcdefghijklmnop", "http://www.example.com/hearts.png");
-
-$client->account->messages->sendMessage("+14158141829", "your validation code is";
-
-
-
- 
+$client->account->messages->sendMessage("+441323702029","+447866829892", "this is  a test");
 
 ?>

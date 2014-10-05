@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
-		<?php 
+		<?php
+
+ session_start();
+       $_SESSION['username']= $_COOKIE["username"];
+        $_SESSION['Userid']= $_COOKIE["uid"];	
+
+
 		$pagename = "Dashboard";
 		$dirnm = 2;
 
-		include '../assets/head.php'; ?>
+		include '../assets/head.php';
+		include '../assets/sessiondata.php';
+		 ?>
 	<body>
 		<?php 
 		include '../assets/header.php';
@@ -14,13 +22,13 @@
 			<div id="Content">
 				<div id="Row">
 					<div id="Box">
-						<a href="Hive.html">
+						<a href="pages/Hive.php">
 							<img src="images/Hive.png" />
 							<p>Heating</p>
 						</a>
 					</div>
 					<div id="Box">
-						<a href="">
+						<a href="pages/Lighting.php">
 							<img src="images/Bulb.png" />
 							<p>Lighting</p>
 						</a>
