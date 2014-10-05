@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<title>HomeHub - Hive Heating</title>
+		<title>HomeHub - Dashboard</title>
 	</head>
 	<body>
 		<header>
@@ -10,29 +10,36 @@
 				<h1><a href="dashboard.html">HomeHub</a></h1>
 			</div>
 			<div id="PageTitle">
-				<h1>Heating</h1>
+				<h1>Dashboard</h1>
 			</div>
 			<div id="logout">
 			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
 			<a class="logout"href="../logout.php"><span >[Username]</span></a>
 		</div>
-
 		</header>
 
 		<div id="Wrap">
 			<div id="Content">
-				<h1>Current temperature:</h1>
-				<p>[]</p>
-				<br>
-				<h1>Heating:</h1>
-				<div id="answer">
-					On <input type="radio" name="yes/no" value="yes" class="Radio">
+				<div id="Row">
+					<a href="Hive.html">
+						<div id="Box">
+							<img src="../images/Hive.png" />
+							<p>Heating</p>
+						</div>
+					</a>
+					<a href="Lighting.html">
+						<div id="Box">
+							<img src="../images/Bulb.png"/>
+							<p>Lighting</p>
+						</div>
+					</a>
+					<a href="Alarms.html">
+						<div id="Box">
+							<img src="../images/Alarm.png" />
+							<p>Alarms</p>
+						</div>
+					</a>
 				</div>
-				<div id="answer">Off <input type="radio" name="yes/no"value="no" class="Radio"></div>
-				<br>
-				<br>
-				<h1>Adjust temperature:</h1>
-					<input type="button" name="-1" class="button" value="-"><p class="button">[]</p><input type="button" name="+1" class="button" value="+">
 			</div>
 		</div>
 	</body>

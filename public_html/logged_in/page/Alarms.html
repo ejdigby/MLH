@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
-		<title>HomeHub - Hive Heating</title>
+		<title>HomeHub - Alarms</title>
 	</head>
 	<body>
 		<header>
@@ -10,7 +10,7 @@
 				<h1><a href="dashboard.html">HomeHub</a></h1>
 			</div>
 			<div id="PageTitle">
-				<h1>Heating</h1>
+				<h1>Alarms</h1>
 			</div>
 			<div id="logout">
 			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
@@ -21,18 +21,12 @@
 
 		<div id="Wrap">
 			<div id="Content">
-				<h1>Current temperature:</h1>
-				<p>[]</p>
+				<h1>Alarm status:</h1>
+				<p>[Armed/Disarmed/Triggered]</p>
 				<br>
-				<h1>Heating:</h1>
-				<div id="answer">
-					On <input type="radio" name="yes/no" value="yes" class="Radio">
-				</div>
-				<div id="answer">Off <input type="radio" name="yes/no"value="no" class="Radio"></div>
-				<br>
-				<br>
-				<h1>Adjust temperature:</h1>
-					<input type="button" name="-1" class="button" value="-"><p class="button">[]</p><input type="button" name="+1" class="button" value="+">
+				<h1>Edit alarm status:</h1>
+				<div id="answer">Disarmed <input type="radio" name="AlarmStatus" value="no" class="Radio"></div>
+				<div id="answer">Armed <input type="radio" name="AlarmStatus" value="yes" class="Radio"></div>
 			</div>
 		</div>
 	</body>
