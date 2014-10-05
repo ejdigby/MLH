@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<title>HomeHub - Alarms</title>
+	</head>
+	<body>
+		<header>
+			<div id="HomeHub">
+				<h1><a href="dashboard.html">HomeHub</a></h1>
+			</div>
+			<div id="PageTitle">
+				<h1>Alarms</h1>
+			</div>
+			<div id="logout">
+			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
+			<a class="logout"href="../logout.php"><span >[Username]</span></a>
+		</div>
+
+		</header>
+
+		<div id="Wrap">
+			<div id="Content">
+				<h1>Alarm status:</h1>
+				<p>[Armed/Disarmed/Triggered]</p>
+				<br>
+				<h1>Edit alarm status:</h1>
+				<div id="answer">Disarmed <input type="radio" name="AlarmStatus" value="no" class="Radio"></div>
+				<div id="answer">Armed <input type="radio" name="AlarmStatus" value="yes" class="Radio"></div>
+			</div>
+		</div>
+	</body>
+</html>

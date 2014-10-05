@@ -1,9 +1,29 @@
 <!DOCTYPE html>
+<<<<<<< HEAD:public_html/logged_in/pages/Hive.php
 <html> 
 	<?php session_start();
        $_SESSION['username']= $_COOKIE["username"];
         $_SESSION['Userid']= $_COOKIE["uid"];	
 
+=======
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<title>HomeHub - Hive Heating</title>
+	</head>
+	<body>
+		<header>
+			<div id="HomeHub">
+				<h1><a href="dashboard.html">HomeHub</a></h1>
+			</div>
+			<div id="PageTitle">
+				<h1>Heating</h1>
+			</div>
+			<div id="logout">
+			<!-- <a class="logout"href="../logout.php"><span > <?php /* echo $_SESSION['Username']; */?></span></a> -->
+			<a class="logout"href="../logout.php"><span >[Username]</span></a>
+		</div>
+>>>>>>> origin/master:public_html/logged_in/page/Hive.html
 
 		$pagename = "Heating";
 		$dirnm = 3;
